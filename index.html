@@ -1,95 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Destination Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+
+        /* WHOLE PAGE STYLE */
+
+        body{
+            background-color:#eeeeee;
+        }
+
+
+        /* TOP BANNER IMAGE */
+
+        .banner img{
+
+            width:100%;
+
+            /* Desktop image height */
+            height:420px;
+
+            /* keep image looking nice */
+            object-fit:cover;
+        }
+
+
+
+        /* DESTINATION IMAGES */
+
+        .place-image{
+
+            width:100%;
+
+            height:100%;
+
+            object-fit:cover;
+        }
+
+
+
+        /* TEXT BOX STYLE */
+
+        .content-box{
+
+            padding:60px;
+
+            height:100%;
+
+            display:flex;
+
+            align-items:center;
+        }
+
+
+
+        /* light background color */
+
+        .light-section{
+
+            background:#fdfbe9;
+        }
+
+
+
+        /* dark background color */
+
+        .dark-section{
+
+            background:#246068;
+
+            color:white;
+        }
+
+
+
+        /* last card image */
+
+        .small-image{
+
+            width:150px;
+
+            height:100px;
+
+            object-fit:cover;
+        }
+
+
+
+        /* add some spacing */
+
+        .space-top{
+
+            margin-top:40px;
+        }
+
+
+
+
+        /* TABLET RESPONSIVE */
+
+        @media(max-width:991px){
+
+            .banner img{
+
+                height:350px;
+            }
+
+            .content-box{
+
+                padding:40px;
+            }
+
+        }
+
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media(max-width:767px){
+
+            .banner img{
+
+                height:280px;
+            }
+
+
+            .content-box{
+
+                padding:30px;
+            }
+
+
+            .small-image{
+
+                width:100%;
+
+                height:200px;
+
+                margin-bottom:15px;
+            }
+
+        }
+
+
+    </style>
+
 </head>
 
 <body>
-    
-    <div>
 
-        <img src="images/pexels-photo-4894870.jpeg" class="img-fluid" alt="Responsive Image">
-    
-    </div>
 
-    <div class="container">
-        <h2>Destination</h2>
-    </div>
+<!-- TOP HERO BANNER -->
 
-    
-<!-- SECTION 1 -->
-<div class="container-xxl">
-    <div class="row vh-100">
-  
-      <!-- Image LEFT -->
-      <div class="col-md-6 p-0">
-        <img src="images/pexels-photo-4831055.webp"
-             class="img-fluid w-100 h-100 object-fit-cover"
-             alt="Image 1">
-      </div>
-  
-      <!-- Content RIGHT -->
-      <div class="col-md-6 d-flex align-items-center justify-content-center"
-           style="background-color: #fdfbe9;">
-  
-        <div class="container">
-          <h1 class="mb-3 p-4">Welcome to Italy</h1>
-  
-          <p class="mb-4 p-4">
-            Italy is a country in Southern Europe known for its history,
-            culture, and beautiful landscapes.
-          </p>
-  
-          <div class="px-4">
-            <button class="btn btn-primary btn-sm px-4">
-              Share your story
-            </button>
-          </div>
+<div class="banner">
+
+    <img
+    src="images/Banner.jpeg"
+    alt="Banner">
+
+</div>
+
+
+
+
+
+<!-- DESTINATION TITLE -->
+
+<div class="container">
+
+    <h1 class="mt-5 mb-4">
+
+        Destinations
+
+    </h1>
+
+</div>
+
+
+
+
+
+
+<!-- FIRST SECTION -->
+
+<div class="container space-top">
+
+    <div class="row g-0">
+
+        <!-- LEFT IMAGE -->
+
+        <div class="col-lg-6">
+
+            <img
+            src="images/city.webp"
+            class="place-image"
+            alt="city">
+
         </div>
-  
-      </div>
-  
-    </div>
-  </div>
-  
-  
-  <!-- SECTION 2 (FLIPPED) -->
-  <div class="container-xxl">
-    <div class="row vh-100">
-  
-      <!-- Content LEFT -->
-      <div class="col-md-6 d-flex align-items-center justify-content-center"
-           style="background-color: #fdfbe9;">
-  
-        <div class="container">
-          <h1 class="mb-3 p-4">Discover Italy History</h1>
-  
-          <p class="mb-4 p-4">
-            Italy has a rich history from the Roman Empire to the Renaissance,
-            influencing the entire world.
-          </p>
-  
-          <div class="px-4">
-            <button class="btn btn-primary btn-sm px-4">
-              Learn more
-            </button>
-          </div>
+
+
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="col-lg-6 light-section">
+
+            <div class="content-box">
+
+                <div>
+
+                    <h2 class="fw-bold mb-4">
+
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit
+
+                    </h2>
+
+
+
+                    <p>
+
+                        "Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam,
+                        quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat."
+
+                    </p>
+
+
+                    <p>
+
+                        If a story is in you,
+                        it has to come out!
+
+                    </p>
+
+
+
+                    <button class="btn btn-primary">
+
+                        Share your story
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
         </div>
-  
-      </div>
-  
-      <!-- Image RIGHT -->
-      <div class="col-md-6 p-0">
-        <img src="images/pexels-photo-4831055.webp"
-             class="img-fluid w-100 h-100 object-fit-cover"
-             alt="Image 2">
-      </div>
-  
+
     </div>
-  </div>
+
+</div>
+
+
+
+
+
+
+<!-- SECOND SECTION -->
+
+<div class="container">
+
+    <div class="row g-0 flex-column-reverse flex-lg-row">
+
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="col-lg-6 dark-section">
+
+            <div class="content-box">
+
+                <div>
+
+                    <h2 class="fw-bold mb-4">
+
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit
+
+                    </h2>
+
+
+                    <p>
+
+                        "Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam,
+                        quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat."
+
+                    </p>
+
+
+
+                    <p>
+
+                        If a story is in you,
+                        it has to come out!
+
+                    </p>
+
+
+
+                    <button class="btn btn-outline-light">
+
+                        Explore more
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT IMAGE -->
+
+        <div class="col-lg-6">
+
+            <img
+            src="images/city.webp"
+            class="place-image"
+            alt="city">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- LAST CARD SECTION -->
+
+
+<div class="container mt-5 mb-5">
+
+
+    <div class="card p-3">
+
+
+        <div class="row align-items-center">
+
+            <!-- left image -->
+
+            <div class="col-md-3">
+
+                <img
+                src="images/Banner.jpeg"
+                class="small-image rounded"
+                alt="small image">
+
+            </div>
+
+
+
+            <!-- right content -->
+
+            <div class="col-md-9">
+
+                <h3 class="fw-bold">
+
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit
+
+                </h3>
+
+
+                <p>
+
+                    "Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam."
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
