@@ -84,14 +84,13 @@
 
 
         /* last card image */
-
+        
         .small-image{
 
-            width:150px;
+        height:100px;
 
-            height:100px;
+        object-fit:cover;
 
-            object-fit:cover;
         }
 
 
@@ -369,11 +368,17 @@
 
             <div class="col-md-3">
 
-                <img
-                src="images/Banner.jpeg"
-                class="small-image rounded"
-                alt="small image">
-
+                <!-- Bootstrap border around image -->
+            
+                <div class="border border-2 rounded-4 p-2 bg-white">
+            
+                    <img
+                    src="images/Banner.jpeg"
+                    class="small-image rounded-3 w-100"
+                    alt="small image">
+            
+                </div>
+            
             </div>
 
 
